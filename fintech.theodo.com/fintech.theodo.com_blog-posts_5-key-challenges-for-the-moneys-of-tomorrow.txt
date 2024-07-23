@@ -1,0 +1,71 @@
+5 Key Challenges for the Money(s) of Tomorrow
+ Â Sipios devient TheodoÂ FinTech, lâentitÃ© experte Services Financiers du groupe Theodo 
+ClientsOffresMobile Wealth ManagementFintechÂ Due DiligenceMVPÂ at scaleConception et design UX/UIProgramme d'APIsationFinTech as a serviceExpertisesReactJSOpen BankingSpring BootKotlinBlog
+
+Tech
+
+BusinessCarriÃ¨re
+
+Equipe
+
+
+Nous rejoindreContact5 Key Challenges for the Money(s) of Tomorrow6 minutesMis Ã  jour le29/10/2021Share this postAfter centuries dominated by the holly dollar in cash, cryptocurrencies are shaking up the currency hierarchy. New currencies are emerging day after day, making it difficult to understand what differentiates them and which ones will play an important role in the future#FinTech#Money 2020After centuries dominated by the holly dollar in cash, cryptocurrencies are shaking up the currency hierarchy. New currencies are emerging day after day, making it difficult to understand what differentiates them and which ones will play an important role in the future.
+
+Unsurprisingly, this issue was covered at the Money 2020 show we attended in September to try to give an answer to the question of the future of money. Starting with taking a look at the several candidates in the running to be part of this future, we'll then dive in the key challenges these contenders need to address to reach a widespread adoption.
+How will we pay in 20 years?
+Applying for the role of currency of the future :
+
+Cryptocurrencies
+
+The concept of crypto-currencies dates back to the late 1990s, but they really emerged in the 2010s, with the creation of Bitcoin. They are already used for transactions and are accepted by companies and even countries (such as El Salvador, which has made them one of its official currencies).
+They are digital values, exchanged in P2P (peer to peer) and therefore without intermediaries (in particular state intermediaries such as Central Banks, ). As there are no intermediaries or regulators, their value depends on the image that these crypto-currencies have among investors, their use and above all the confidence of users in these currencies.
+With more than 1,000 crypto-currencies and 221 million (and growing fast) users, they are for sure a serious candidate.
+
+
+Stablecoins
+
+Mostly appearing from 2015, stable coins are also a cryptocurrency. The difference lies in the stability of the currency, which has a value backed by a safe haven (a fiat currency, commodities ...). This prevents the value from fluctuating too much over time.
+An example of a stablecoin is Diem. Developed by Facebook, this currency is indexed to the dollar. This example shows the arrival of private companies in the currency market.
+These currencies can also be used as alternatives in developing countries where the institutional currency is subject to very strong variations. For example, in Mexico, where the Mexican peso has lost up to 37% of its value, Amazon is looking to create a new crypto-currency to subscribe to its services.
+
+CBDCs
+
+Central Bank Digital Currencies (CBDCs) are an evolution of fiat currencies, first tested by China in 2014. They are digital money issued directly by Central Banks. They are a response by governments to cryptocurrencies to offer a centralised alternative and above all to allow central banks to keep the monopoly on money creation.
+CBDCs are already experimented in several countries with the ambition of using them in real life in the near future. Indeed, according to the BIS (Bank for International Settlements)(https://www.bis.org/about/bisih/topics/cbdc.htm), 86% of Central Banks have actively started researching the potential of CBDCs.
+
+ 
+Even if unforeseen candidates might blow this list up in the future, we can already see that key trade-offs will lie in the degree of centralisation and stability.
+Anyway, it's interesting to note that the preferred technology to support these currencies is now blockchain. This allows currencies to use smart contracts, and then allow them to become programmable. The currency itself would contain the rules to automatically carry out transactions without the need for an intermediary or a means of payment to back it up.
+Even if things are moving fast, these currencies still have a long path to go before becoming official and widespread. Let's now look at the trials to overcome.
+The 5 key challenges future currencies will face
+
+Technical feasibility
+
+Track-records of potential candidates show that this first challenge has already been tackled. Whether it is cryptocurrencies or CBDCs, concept has already been proven without the need for any fundamental innovation (although they need incremental innovations to be more efficient).
+Let's not forget however that innovation could lead to the emergence of other types of currencies, that will need to prove that their ambition is technically feasible.
+
+Access to technology
+
+Most financial services are today based on a "developed countries-like" technologic and socio-economic architecture. However, many countries do not have the same architecture as seen in the second article of our Money2020 series:
+        - 2 billion people do not have access to the internet (source): physical currency is not dead, and we have room for improvement here.        - 1 billion people do not have identity documents according to World Bank, making the identity verification process impossible as it is made right now.
+However, technology allows emerging countries to make leapfrog to boost their economies, as seen in India with the biometric identification system Aadhaar that allowed the government to enumerate 1 billion citizens.
+
+
+Data security
+
+Data computerisation put data security at stake. Taking the example of the Aadhaar system, it has been subject to vulnerabilities and data leakage. Digitised data is no longer stored at the user's premises, but on the internet, and it is necessary to work with trusted third parties to promise the best possible security.
+There are also data regulations such as the RGPD that ensure a legal framework for the storage and transfer of this data. Which brings us to the next point: how to create a currency with the current regulation.
+
+Regulation
+
+Having a regulator to oversee best practices allows to protect consumer exposure from scams and reduce fraud as legal risk from the use of new products (financing of terrorism, money laundering, etc.)
+At the same time, it should not be there to de facto restrict all new players from entering the market, thus bringing new ideas and new opportunities for the consumer.
+For example, when Facebook announced the creation of its cryptocurrency Libra in 2019, former Minister of the Economy Bruno Le Maire made it clear that the regulator was not ready to accept new private players on a ground that is historically rules by the State: "Money is an attribute of the sovereignty of States and must remain in the hands of States and not of private companies that respond to private interests" (source)
+However, countries like El Salvador (where Bitcoin is one of its official currencies) are much more open on this issue compared France (no clear legal status, not recognised as financial instruments, therefore not regulated).
+
+Collaboration between the private and public sectors
+
+If a currency is widely used by people around the globe, one of the challenges will also be the collaboration between the private and public sectors, particularly with the emergence of powerful tech companies such as GAFAM.
+For the moment, public sector and private sector are working on different currency projects with, as we have seen, different goals (recentralisation of the system towards central banks on the one hand, access to new international markets on the other). For new currencies to solve the hard currency problems, it will have to be accepted and recognised in multiple systems, making private/public collaboration crucial.
+Our participation in Money 2020 finally made us consider money as a product. It is necessary to start small with an MVP, and then iterate to be sure we really answer user needs.
+We can see that to emerge, a currency must not only exist and be adopted by many people (as is the case for Bitcoin), it must also answer to more structural problems and above all succeed in gaining the trust and adoption of various institutions (public and private). In this context, multiple divergences seem to be holding back the adoption of a new currency at a large scale, let's see how lines are moving in the next months.Copyright Â©2023 TheodoÂ FinTech. Tous droits rÃ©servÃ©s.EquipeNous rejoindreContactTheodoPolitique de confidentialitÃ©Mentions lÃ©gales

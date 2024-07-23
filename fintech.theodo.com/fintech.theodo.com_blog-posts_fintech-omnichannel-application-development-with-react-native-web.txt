@@ -1,0 +1,125 @@
+FinTech omnichannel application development with React Native Web
+ Â Sipios devient TheodoÂ FinTech, lâentitÃ© experte Services Financiers du groupe Theodo 
+ClientsOffresMobile Wealth ManagementFintechÂ Due DiligenceMVPÂ at scaleConception et design UX/UIProgramme d'APIsationFinTech as a serviceExpertisesReactJSOpen BankingSpring BootKotlinBlog
+
+Tech
+
+BusinessCarriÃ¨re
+
+Equipe
+
+
+Nous rejoindreContactFinTech omnichannel application development with React Native Web10 minutesMis Ã  jour le10/8/2020Share this postDeveloping Web and Mobile applications in Fintech thanks to React Native Web.#FinTech#Mobile application#Omnicanal#React#React Native#React Native WebRuben SitbonTech Lead & Solutions ArchitectThe context
+
+47% of mobile banking users update their bank details via a laptop or desktop, while just 26% like to make changes with a smartphone, showing that consumers prefer online banking platforms over mobile ones for important tasks. â Deloitte, The value of online banking channels in a mobile-centric world, By Val Srinivas and Richa Wadhwani
+
+ 
+Financial institutions are challenged every day by FinTechs introducing new digital products. Revolut has a well-known mobile UX: a playful interface and notifications at the right time. Pretto, a French FinTech to find the best loan, has a comprehensive desktop interface, very intuitive onboarding, and a simulation page with a lot of information. Most of the time, companies wonder what to choose between developing a Web or a Mobile Application. However, focusing on one platform at the expense of another will lead to inadequate features, that will frustrate your users.
+Let's face it, a flagship financial application will need light, and user-friendly features suited for mobile. But, you will also have complex interactions with your users and they will prefer having them on their computer. Therefore, choosing between Web and Mobile development is tough.
+At Sipios, we can develop on both platforms at the same time thanks to React Native Web
+
+How is React Native Web different from its slightly better-known cousins, React Native and React?
+To clarify what we are talking about:
+
+React.js an open-source JavaScript library for building web user interfaces;
+React Native is an open-source mobile application framework;
+React Native Web is a React Native library that enables converting logic and components from React Native code to a React.js (for web) code.
+
+In other words, React Native Web brings your React Native App to the web.
+React Native Web enables code reuse and improves code quality through SOLID architecture enforcement
+The main benefit of React Native Web is the way it allows you not only to share JavaScript logic functions such as formatting, data fetching, state management, etc but also to share components. This is a huge step forward in terms of code reusability. For example, DevHub (6.8kâ­ repository), managed to reach more than 95% of code sharing between platforms.
+Code architecture is very important with React Native Web. This not only ensures your code maintainability but it also improves your code quality. Some principles can help you produce better code. For example, the SOLID principles help you create more maintainable code, easier to read, test, and use. SOLID stands for :
+
+Single-responsibility principle: Each class (you can extend it to functions, components, etc.) should only have one responsibility.
+Open-closed principle: Your entities should be opened for extensions, but closed for modifications.
+Liskov substitution principle: "Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."
+Interface segregation principle: Interface should not depend on methods used by other interfaces.
+Dependency inversion principle: One should prefer a dependency on abstraction rather than on dependency on a direct hierarchical element.
+
+Some frameworks, such as Spring (Java), enforce a SOLID code architecture. However, React.js and React Native tend to give a lot of freedom in code architecture. React Native Web helps you to apply at least the first of the SOLID principles: The Single-responsibility principle.
+Indeed, here is an example of the code architecture of a classic React Native Web App :
+
+As you can see, there are 3 interesting files in this example :
+
+Header.component.ts: This is the default component. it is used in this case for mobile: Android + IOS.
+Header.component.web.ts: This is the web version of the component.
+Header.service.ts: This is where you extracted the logic of your component to be able to share it between web and mobile.
+
+ 
+Here is an example of a service file :
+ 
+ 
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10//Header.service.ts
+
+export const someLogicFunction = (something) => {
+if something = 'somethingGreat' {
+return doSomething()
+}
+
+return doSomethingElse()
+}
+export const someReshapedParams = (something) => something.map(() => {})
+
+ 
+Here is an example of a service file :
+ 1 2 3 4 5 6 7 8 9101112131415161718192021//Header.component.tsimport React from 'react'import {someLogicFunction, someReshapedParams} from './Header.service.ts'type Props = {something: [any]};const Header = (props: Props) => {someLogicFunction(props.something)return (<><AnotherComponent params={someReshapedParams(props.something)} /></>)}export default Header
+You can see that the component is logicless. The logic you extracted will be easier to share between a web and a mobile component.
+And last but not least, It's easier for you to test the logic of your component now that it's in a different file.
+Here is a link to an excellent article about the SOLID principle in React.js if you want to dig into the subject: https://blog.usejournal.com/how-to-apply-solid-principles-in-react-applications-6c964091a982
+React Native Web improvement axis are its lack of maturity and some missing features
+As a FinTech or a bank institution, you may want to use only proven technologies. Since React Native Web is still in beta you may be concerned that this technology still lacks maturity.
+An interesting indicator to measure maturity is the amount of breaking changes, fixes, and new features for each new version of the library.
+
+Amount of breaking changes, features and fixes over time of React Native Web!
+As shown in this graphic, the amount of breaking changes, and features are high but the frequency of the upgrades is getting lower. In other terms, a React Native Web version upgrade will be time-consuming (high amount of breaking changes) but will only occur twice a year.
+Another drawback is that some components (the Modal for instance), and some APIs (Alerts API), are not compatible with React Native Web. Thus, to fix those missing behaviors, with web equivalent, some issues have been opened. So you will need to either find a way to build your own components or wait for those issues to be fixed.
+Despite the apparent lack of maturity of this library, major companies such as Twitter, Uber, Expo, The Times trust it.
+React Native Web's trade-offs can be overcome through strict Atomic Design
+In the first part, we understood how React Native Web highlights the anti-patterns that were commonly used when we didn't have to share the logic between web and mobile. However, since it is a React application, everything can be coded in one component.
+Two options exist to differentiate the web and mobile code :
+
+You can code everything in a single component and handle mobile/web features with the Platform API from React Native.
+
+
+const value: number = Platform.OS === 'ios' ? 200 : 100
+
+ 
+
+Or you can have one file for the mobile component and one for the web component.
+
+The option with the cleanest and most maintainable code is the second one, but you'll need more time to create those components. So we need a framework to optimize the production of differentiated components. Atomic Design gives you a way to have a clean separation between content and structure. We can use this clear separation to choose when we should create web and mobile components.
+
+https://atomicdesign.bradfrost.com/chapter-2/
+ 
+In Atomic Design we split components into "atomic pieces", then assemble them into "molecules", then "organisms", then "templates", and finally into a page.
+To be able to work with React Native Web, there are two key adjustments to do:
+
+Create different atoms for Web and Mobile
+
+If your component is not already React Native Web (i.e. other than texts, buttons, views, etc.), it would be best to have two different atomic components, one for the web and the other for mobile. Indeed, your specific buttons, icons, pickers may have different behaviors on the web and mobile.
+
+Create different templates for Web and Mobile
+
+As you can see in the two screenshots below, the middle section of the twitter web page is almost the same as the mobile one. Still, there are a few differences :
+
+The "Write a new tweet" button on mobile is a floating action button. On the Web, it is replaced by the "Tweet" button in the left section.
+The navigation system is different: a header with a back arrow on the web and a floating back button on mobile.
+The icons are different: mobile icons look more playful.
+The setting button is a floating button on mobile instead of a button in the page presentation on the web.
+
+
+The Twitter web page of @reactjs
+
+The Twitter Mobile page of @reactjs
+As you can see the molecules are the same: a post, a like section, a page header, etc. But you display way more information on desktop than on mobile. As a result, you need a specific template for mobile and web.
+Conclusion
+React Native Web is a React Native library that provides a simple way to convert your mobile application into a web application. It also enables code reuse across platforms and improves code quality thanks to single-responsibility components. Even though this library is still in beta, and some features are missing, it is trusted by tech leaders, like Twitter. To better use React Native Web, its architecture should go through Atomic Design, where only the small components (atoms) and large ones (templates) are specific to web and mobile, i.e. differentiated according to the platforms.Copyright Â©2023 TheodoÂ FinTech. Tous droits rÃ©servÃ©s.EquipeNous rejoindreContactTheodoPolitique de confidentialitÃ©Mentions lÃ©gales

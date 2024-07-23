@@ -1,0 +1,40 @@
+Is cash dead already?
+ Â Sipios devient TheodoÂ FinTech, lâentitÃ© experte Services Financiers du groupe Theodo 
+ClientsOffresMobile Wealth ManagementFintechÂ Due DiligenceMVPÂ at scaleConception et design UX/UIProgramme d'APIsationFinTech as a serviceExpertisesReactJSOpen BankingSpring BootKotlinBlog
+
+Tech
+
+BusinessCarriÃ¨re
+
+Equipe
+
+
+Nous rejoindreContactIs cash dead already?5 minutesMis Ã  jour le20/10/2021Share this postFor sure the combination of covid-19 crisis and growth of electronic payments tend to make cash pass for dead, but what about it really?
+
+Our venue at Money2020 helped us gather some answers on what to expect from the payment world in the next few years. Key learnings:#FinTech#PayTechThe rise of the Internet and the advent of e-commerce have accelerated the digitisation of payment processes by introducing a plethora of electronic payment options such as payment cards (credit and debit), digital and mobile wallets, e-money, contactless payment methods, etc. Payment services are in transition as new usages are booming, opening doors to breakthrough innovation.
+The combination of covid-19 crisis and growth of electronic payments tend to make cash pass for dead, but what about it really?
+The number of payment systems is flourishing
+A wide variety of online payment systems have been developed in recent years. These systems can be classified into two broad categories: account-based systems and e-money systems. The account-based systems allow users to make payments using their personal bank accounts, while the other system only allows payments if the consumer has sufficient e-money (for instance CryptoWallets). These systems accept a variety of payment methods, including:
+
+Electronic payment cards (debit, credit and charge cards)
+Electronic wallets
+Virtual credit cards
+Mobile payments
+Loyalty cards and smart cards (E-cash).
+Stored-value card payments
+
+We realized at Money2020 that many companies are allocating a lot of resources to build the payment methods of tomorrow. Let's quickly see to what extent these new payment methods are a hindrance or a real advantage for users.
+Adoption of electronic and mobile payment is growing but slowed down by its complexity and cost
+Connected payment systems bring value to final users as they represent an easy alternative to cash payments and bring a faster connection to their financial resources. Besides, they are a strong lever on financial inclusion as making a payment does not require any bank account, and therefore a traditional identity authentication. With just an app, one is able to have access to digital payment helping to overcome the setbacks we get from cash.
+However, electronic and mobile payment still suffer from its complexity, that some customers see as a barrier, even if it tends to change with a global streamlining of user interfaces. Another brake is cost: widespread adoption will only happen when these ways of payment will cost the same as traditional means. It is by the way one of the major issues in the widespread adoption of cryptocurrencies as a payment method: the average cost of a transaction on Ethereum is currently $3.60, while a transfer on Lydia will cost you nothing.
+Connected payments may threaten data protection
+Â« If a bank loses the trust of its clients, it loses its business. People like Google but donât trust them whereas they donât like banks but they trust them. Â»
+Traditionally, the business model for banks relies on interest rates and financial services and those institutions earned the trust of their clients by keeping their data safe as Wim Mijs, CEO of the European Banking Federation said at Money2020. By opposition, the Â« BigTech Â»  now also provides payment services but cannot claim that level of control on data. According to Wim Mijs, privacy must remain a priority for traditional banks for them to keep their business against those new financial actors.
+And that's easier said than done. The 2008 financial crisis and financial scandals over the past few years have forced banks to be more transparent on the user information they require and own, and data has become a valuable asset that most players tend to sell. Payment data could then shift from completely protected to partially used commercially like any other piece of data we can find on the web.
+Of course, the clientâs agreement to this use of his data and the local regulations on payments will be the last barrier to this new business models. As Martina Weimert (CEO of EPI Interim Company SE) predicted it at Money 20/20, EU has less chances to have Â« super apps Â» as WeChat in China: different financial apps are coexisting for each of our needs, thus isolating financial data and preserving its privacy. Data protection on payement would then depend on the country and its relation to privacy.
+After all, is cash dead already?
+Letâs remind that money has 3 advantages: i) storing value, ii) expressing the value of an asset and iii) making a transaction, a payment. Cash represented 79% of the payments in 2016 in the Euro zone and 73% in 2019 before the pandemic*. According to BNP Paribasâ CEO, at the end of 2020** the decline of the use was of 4% a year in France and rose to 10% with the pandemic. These figures are sufficient to show the end of an era for cash as the way of payment.
+Nevertheless, the amount of cash available in the EU stood at 27.4 billion with an overall value of â¬1.5 trillion in August 2021***. The use of cash in payments reduces but does that mean that cash will not survive? As Gijs Boudewijn, General Manager at Dutch Payment Association, statued on this topic at Money 20/20. It just means that the use of cash has shifted. From "making transactions", it shifted towards "storing value": cash becomes a way to hoard. It did not disappear, it just changed of purpose.
+Moreover, Gijs Boudewijn argues that cash could not disappear because (or thanks to?) unbanked people, whether they are unbanked by default or by design. It can be counterintuitive as we saw digital payment systems foster financial inclusion, since they are more accessible and does not always need a centralised architecture. But for Gijs Boudewijn, a small part of the population will always remain out of the system. A 100% penetration will not be practicable in the next years and cash will remain the only way for the outsiders to make payments. Payments in cash are dying but it will not be buried soon.
+
+No doubt that we are facing a unique shift on ways of payment: what we exchange and how we exchange it is being revolutionized thanks to decentralized payments that bring fastness, security and financial inclusion. However, all those changes are not happening at the same pace all over the globe: it depend on many factors like regulation, government actions, privacy preferences and obviously economic development. For some ways of payment such as cryptocurrency, global development will strongly depend on these turf wars.Copyright Â©2023 TheodoÂ FinTech. Tous droits rÃ©servÃ©s.EquipeNous rejoindreContactTheodoPolitique de confidentialitÃ©Mentions lÃ©gales

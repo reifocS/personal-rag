@@ -1,0 +1,50 @@
+How to succeed as a Fintech: tales from Amsterdam
+ Â Sipios devient TheodoÂ FinTech, lâentitÃ© experte Services Financiers du groupe Theodo 
+ClientsOffresMobile Wealth ManagementFintechÂ Due DiligenceMVPÂ at scaleConception et design UX/UIProgramme d'APIsationFinTech as a serviceExpertisesReactJSOpen BankingSpring BootKotlinBlog
+
+Tech
+
+BusinessCarriÃ¨re
+
+Equipe
+
+
+Nous rejoindreContactHow to succeed as a Fintech: tales from Amsterdam3 minutesMis Ã  jour le18/11/2021Share this postMoney 20/20 Amsterdam taught us the keys to success in the Fintech industry: focus on tech, target a community and master identity verification.No items found.We collected insights and advice from speakers from a dozen Fintechs of different sizes, fields and origins. Here are their key success factors we retained:
+
+Develop cutting-edge technologies that are compliant day one.
+Serve targeted communities that are under-served to create fast adoption and virality.
+Partner with the right tech provider to implement the right level of KYC.
+
+Develop cutting-edge technologies that are compliant day one
+Even though banks like Barclay's are heavily investing in digital financial services, small and agile companies often have a technological edge over traditional banks. Megan Cooper, Chief Platform Officer of Barclay's, puts it this way: "most innovation and growth in the sector has come in the last twenty years from new players. To work with the best, work with early-stage companies".
+With lower compliance and technological barriers thanks to new challengers, know-how is becoming now more important than financial services experience. You can indeed launch a fintech without an expert of payment schemes and banking infrastructure. But this apparent ease comes to an end with regulation: mastering regulation from KYC to certifications is still a key success factor, whether it is to bypass it or to comply with it. Entrepreneurs we've met had learned it the hard way, but leveraging technology to get an advantage in the sector without knowing well regulations can eventually happen to be dangerous.
+
+Serve targeted communities that are under-served to create fast adoption and virality
+By starting small, you also take advantage of bringing a community onboard. We had the chance to hear from the Co-Founders of three inspiring startups, who showed us how their early-adopters community and the attention they paid to them had enabled them to build great products :
+
+Daylight (Billie Simmons, COO) which enables LGBTQ+ people to gain non-discriminatory access to a bank account.
+PIGGYVEST (Odunayo Eweniyi, COO) which allows Nigerian projects to be funded via an investment platform.
+Wealth8 (Bimpe Nkontchou, CEO) which makes investment more accessible to the black and multi-ethnic community in the UK. In particular, by helping families to form.
+
+All of these products have one thing in common: they have been built to answer specific needs of a targeted user segment. And the Fintech industry is not an exception to the rule: some communities and peoples have traditionally been excluded from basic financial services. Tailoring your products to suit their needs will greatly help early adoption.
+If you want to know more about Fintech products built to be inclusive, read this article.
+
+Partner with the right tech provider to implement the right level of KYC
+Identity verification is crucial for every Fintech product, and entrepreneurs have spotted the space, which starts to be crowded. Therefore, with such a large offering, choosing the right partner for this step is therefore critical.
+However, it's important to know is that even with AI-powered technology and success rates above 95%, no financial institution will let a completely autonomous solution take over KYC. As such, many of the market solutions include manual verifications to be 100% confident of ID verification.
+At Sipios we value solutions that :
+
+focus on user experience
+protect the privacy of our users
+have a fast lead time of treatment (<20 minutes)
+have well documented APIs and can easily be integrated in our projects
+notify us of incidents and keep us up to date on the resolutions
+
+Silent players are also growing with innovative technologies that would maybe answer the need for manual check:
+
+Tykn is a tech company that offers decentralized ID verification. By leveraging the advantages of blockchain as well as cutting-edge cryptographic methods like Zero-knowledge proof, Tykn can guarantee identity verification without revealing actual private information, or needing manual verification.
+Meeco is another company, present at Money 20/20 that uses the same technology to offer decentralization of personal data, which can be applied in particular to identity verification.
+
+
+Our experience at Money 20/20 showed us that these are the points that must be taken in account in order to grow. Do you agree with them ?
+Furthermore, now that you know about these keys to success, and want to know more about the mistakes to avoid, we published an article about how bad user research may sink your product.Copyright Â©2023 TheodoÂ FinTech. Tous droits rÃ©servÃ©s.EquipeNous rejoindreContactTheodoPolitique de confidentialitÃ©Mentions lÃ©gales

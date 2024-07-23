@@ -1,0 +1,130 @@
+Et si on lanÃ§ait rapidement un produit de qualitÃ© tout en scalant son organisation ?
+ Â Sipios devient TheodoÂ FinTech, lâentitÃ© experte Services Financiers du groupe Theodo 
+ClientsOffresMobile Wealth ManagementFintechÂ Due DiligenceMVPÂ at scaleConception et design UX/UIProgramme d'APIsationFinTech as a serviceExpertisesReactJSOpen BankingSpring BootKotlinBlog
+
+Tech
+
+BusinessCarriÃ¨re
+
+Equipe
+
+
+Nous rejoindreContactEt si on lanÃ§ait rapidement un produit de qualitÃ© tout en scalant son organisation ?7 minutesMis Ã  jour le11/5/2023Share this postUtiliser la loi de Conway et mettre en place les bonnes Ã©quipes pour rÃ©ussir Ã  lancer en 10 semaines un produit viable dans un contexte d'hypercroissance : le challenge relevÃ© par Sunday.app.#FinTech#ProductAntoine BordasHead of DeliveryEt si on lanÃ§ait rapidement un produit de qualitÃ© tout en scalant son organisation ?
+ð§  Le concept clÃ© - La loi de conway
+
+Organizations, who design systems, are constrained to produce designs which are copies of the communication structures of these organizations
+
+ 
+
+Selon la loi de Conway la structure organisationnelle d'une entreprise a tendance Ã  reflÃ©ter la structure de l'architecture de ses produits. ConcrÃ¨tement, si vous avez une Ã©quipe qui gÃ¨re votre interface admin, et une Ã©quipe en charge de votre espace client ; vous aurez Ã  la fin 2 produits diffÃ©rents, avec un risque de manque de cohÃ©rence.
+En partant de votre schÃ©ma dâarchi pour constituer ses Ã©quipes, une organisation tire 3 bÃ©nÃ©fices :
+
+
+Des Ã©quipes orientÃ©es sur la valeur apportÃ©e aux utilisateurs finaux. Ce type dâorganisation augmente lâownership de lâÃ©quipe en les responsabilisant sur un scope fonctionnel clairement dÃ©fini.
+
+
+Un produit de meilleure qualitÃ© grÃ¢ce Ã  lâadÃ©quation entre les responsabilitÃ©s et le produit final.
+
+
+Lâorganisation se met Ã  rÃ©soudre les vrais problÃ¨mes qui freinent sa croissance. âLa structure d'un problÃ¨me reflÃ¨te la structure de l'organisation qui l'a crÃ©Ã©â.
+
+
+ð§  La loi de Conway appliquÃ©e Ã  lâhypercroissance de sunday.app - sortir une application en 10 semaines en passant de 2 Ã  80 dans lâorganisation
+ð Le contexte
+En mars 2021, nous vivons le 3Ã¨me confinement : les restaurants sont fermÃ©s et la rÃ©ouverture est prÃ©vue pour mai 2021. Victor Lugger, CEO et co-fondateur de Big Mamma, Tigrane Seydoux et Christine de Wendel se sont associÃ©s pour lancer Sunday pour sâattaquer Ã  lâexpÃ©rience de paiement dans les restaurants. Le produit Sunday permet Ã  chaque client de payer rapidement et en autonomie son addition via un QR code disposÃ© sur chaque table. Lâobjectif est dâaugmenter le taux de rotation en diminuant de 15 min le temps passÃ© par table, dâaugmenter le panier moyen et les tips.
+ðï¸ââï¸ Les challenges
+
+
+ Lancer un produit en 10 semaines pour la rÃ©ouverture des restaurants en mai 2021
+
+CrÃ©er une application reliÃ©e aux 60+ POS (points of sales) des restaurants qui matchent les conditions dâintÃ©gration de Sunday
+
+
+CrÃ©er une expÃ©rience de paiement rapide mais sÃ©curisÃ©e. Les serveurs veulent sâassurer que les clients qui quittent le restaurant ont bien payÃ©
+
+
+CrÃ©er une application stable qui rÃ©siste durant les heures de pointe
+
+
+RÃ©ussir Ã  garder le rythme de delivery dans une Ã©quipe en forte croissance. Sunday a recrutÃ© une trentaine dâingÃ©nieurs sur la pÃ©riode
+
+
+ð± Le produit
+Les performances critiques - mÃ©triques clÃ©s de qualitÃ© du produit - sont les suivantes :
+
+
+RapiditÃ© du paiement - objectif : moins de 15 secondes Ã  partir du screen du QR code sur la table
+
+
+ExhaustivitÃ© de POS auquel nous pouvons nous intÃ©grer - 25 POS Ã  intÃ©grer en 6 mois
+
+
+FiabilitÃ© des informations remontÃ©es aux serveurs lors du paiement des clients - objectif : moins de 15 secondes et 0 erreur. Nous touchons au systÃ¨me critique du restaurant, une erreur impacte automatiquement le CA et la marge de lâÃ©tablissement.
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+ð¦ Le delivery
+Organiser des Ã©quipes en forte croissance pour livrer un produit de qualitÃ© en 10 semaines, câest lÃ  que la loi de Conway rentre en jeu : lâorganisation des Ã©quipes reprend le frame de Team Topologies et la loi de Conway. Le scope des Ã©quipes est dÃ©fini par le schÃ©ma dâarchitecture de lâapplication pour une meilleure coordination et communication, une meilleure qualitÃ© du produit et une facilitation des pratiques de dÃ©veloppement agiles et Lean. Des feature teams sont en charge des applications serveurs et clients et une Ã©quipe complex sub-system est en charge de lâintÃ©gration des POS. Le staffing des ingÃ©nieurs est dÃ©fini Ã  leur arrivÃ©e par lâanalyse du schÃ©ma dâarchitecture et de lâarchitecture produit en fonction des prochaines prioritÃ©s Ã  dÃ©velopper.
+Aujourdâhui, Sunday est live dans 4 pays : France, Espagne, UK et USA.
+ð Pour approfondir la loi de Conway - Team topologies
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+La loi de Conway est le point de dÃ©part de lâouvrage Team Topologies qui en retire 4 types dâÃ©quipes possibles :
+
+
+Stream-aligned teams : elles se concentrent sur un unique flux et âship des featuresâ qui apporte de la valeur aux utilisateurs. Le scope peut Ãªtre un morceaux du produit, un parcours utilisateur prÃ©cis, un segment de client. Elles reprÃ©sentent la majoritÃ© des Ã©quipes dans une organisation tech.
+
+
+Platform teams : elles ont le rÃ´le de facilitateur pour les autres Ã©quipes, en fournissant les structures et services nÃ©cessaires aux stream-aligned teams pour dÃ©velopper. Par exemple, une Ã©quipe composÃ©e de devops pourra fournir lâinfrastructure.
+
+
+Complicated-subsystem teams (Ã©quipes sous-systÃ¨mes complexes) : la complexitÃ© dâune partie du produit peut Ãªtre trop importante Ã  absorber pour une stream aligned team, câest Ã  ce moment lÃ  quâinterviennent les complicated-subsytem teams.
+
+
+Enabling teams : elles comblent les manques en matiÃ¨re de connaissance des Ã©quipes stream-aligned. Une des mÃ©triques clÃ© de ce type dâÃ©quipe sera, par exemple, le nombre de formations dispensÃ©es aux Ã©quipes stream-aglined.
+
+
+Organiser ses Ã©quipes avec ce frame permet de donner de la clartÃ© sur les objectifs de chacun et dâoptimiser la crÃ©ation de valeur pour les utilisateurs finaux. Dans le cas de Sunday, nous avions constituÃ© plusieurs stream-aligned teams en charge de lâexpÃ©rience client et restaurateurs, une complicated-subsystem-team en charge de lâintÃ©gration des POS et une Ã©quipe plateforme responsable de lâinfrastructure. Les ingÃ©nieurs responsables de lâintÃ©gration des POS ont pu dÃ©velopper un haut-niveau dâexpertise sur un sujet techniquement complexe en mettant en place une POS factory.
+ð§  Autre avantage du modÃ¨le : donner les clÃ©s des modes de communication Ã  mettre en place entre les diffÃ©rentes Ã©quipes ; ce type de rÃ©flexion amÃ¨ne en gÃ©nÃ©ral une rÃ©duction importante du temps passÃ© en rÃ©union chaque semaine.
+Le modÃ¨le propose 3 modÃ¨les dâinteractions entre les Ã©quipes
+
+
+La collaboration : les Ã©quipes travaillent ensemble sur une pÃ©riode de temps limitÃ©e, particuliÃ¨rement utile dans des pÃ©riodes de discovery. Les Ã©quipes passent du temps ensemble Ã  travailler sur les mÃªmes livrables ou des livrables similaires
+
+
+X-as-a-service : une Ã©quipe fournit un service Ã  une autre, via une API, une interface, des mails. Ce type dâinteractions engendre peu de collaboration
+
+
+Facilitation : une Ã©quipe facilite la vie de lâautre, elle fournit du coaching ou des formations par exemple
+
+
+
+
+
+
+Copyright Â©2023 TheodoÂ FinTech. Tous droits rÃ©servÃ©s.EquipeNous rejoindreContactTheodoPolitique de confidentialitÃ©Mentions lÃ©gales

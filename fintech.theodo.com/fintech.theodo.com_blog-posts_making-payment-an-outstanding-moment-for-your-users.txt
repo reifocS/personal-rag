@@ -1,0 +1,36 @@
+Making payment an outstanding moment for your users
+ Â Sipios devient TheodoÂ FinTech, lâentitÃ© experte Services Financiers du groupe Theodo 
+ClientsOffresMobile Wealth ManagementFintechÂ Due DiligenceMVPÂ at scaleConception et design UX/UIProgramme d'APIsationFinTech as a serviceExpertisesReactJSOpen BankingSpring BootKotlinBlog
+
+Tech
+
+BusinessCarriÃ¨re
+
+Equipe
+
+
+Nous rejoindreContactMaking payment an outstanding moment for your users4 minutesMis Ã  jour le3/11/2021Share this postPayment is often a stressful and boring step of our user experience when buying a good or a service. How tech leaders turn this crucial step from a moment of transaction into a relationship ?#FinTech#Money 2020#PaymentPayment has always been the first act of engagement between a merchant and his customers. With digital technologies, payment today is much more than just a transaction. The boom in new local and global international payments ways create a unique opportunity for businesses. It turns what was considered as a merely transactional moment into a rewarding and trustful experience with a brand.
+
+At Money 20/20, three executives from Spotify, Banked and Azimo discussed how they build deeper relationships with their consumers. In other words: how to build a payment experience that reassures customers and increase conversion rate?
+Why payment is still a stressful moment ?
+More than half of all online transactions are still abandoned before completion. Emotional factors such as fear and anxiety are the main reasons for dropping a purchase and particularly at the final payment stage where security doubts may hinder conversion .
+According to Brad Goodall, CEO and Founder of Banked, a British company that powers real-time payments for consumers, data security and privacy are key online. When talking about personal and financial information, security is the top priority. Retailers and payment providers must reassure their consumer, even if it means slowing down the consumer journey.
+According to Dora Ziambra, Chief Operating Officer at Azimo, a British money transfer company, not knowing where your money is can also be a stressful experience. Reassuring consumers during the whole process, being transparent about when the money will be available on your account is key to create trust. Even if it's complex and a potential source of friction on the user flow, it will strengthen your relationship in the end. The emergence of new payment methods such as QR code or contactless, transparency also plays a primary role in reassuring consumers.
+How to create emotional online payment strategies ?
+But above all, they all three agreed on creating more emotional and intelligent online strategies, depending on the target market and your business model. Mark Shaw, Director of the Global Payments Strategy at Spotify, reminded that the role of an online merchant is to convert prospects and therefore adapt to different customers and markets : "We have entered 18 markets in the past 12 months and have adapted our payment method so that consumers have confidence, wherever we operate, even if it means accept cash as a mean of payment in some countries". As for every product launch, he reminds that the best way of creating a seamless payment journey was test & learn. Test your market, test your business model and never forget what it feels like in your client's shoes.
+We compared Spotify premium and subscription plans between the United Kingdom and Brazil.
+
+The UK has 8 different means of payment and only one plan : subscription model
+Brazil has 16 different means of payment and 2 plans : subscription model and prepaid (1 to 6 months) model. You can for instance pay with Boleto which is literally a printed or virtual voucher that the customer can pay physically using cash at his bank
+
+
+Spotifiy premium plans in the UK
+
+Spotifiy means of payment in the UK
+
+Spotify premium plans in Brazil : 16 different means of payment are displayed including Boleto
+
+Subscription funnel in brazil : you can prepay up to 12 months
+What's next ?
+Last point on which the three speakers agreed was giving more options and purchasing power to consumers. To do so they suggested offering different payment options such as splitting payment or pay later option, so that the transaction can be more affordable or reassure the ones still uncertain.
+Another way is to make the payment a rewarding gesture. Payment stays a strong testimony of commitment that exists between a brand and its customer. It is a mean of trust and recognition from the customer concerning the created value he perceives. If you sell subscription based model such as Spotify, it is very simple to understand what you pay for what you get. Customers willing to pay for your product do understand the value you're creating for them and may be your best ambassador to convert new prospects.Copyright Â©2023 TheodoÂ FinTech. Tous droits rÃ©servÃ©s.EquipeNous rejoindreContactTheodoPolitique de confidentialitÃ©Mentions lÃ©gales

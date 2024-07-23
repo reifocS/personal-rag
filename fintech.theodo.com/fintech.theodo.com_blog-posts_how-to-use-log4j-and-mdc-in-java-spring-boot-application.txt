@@ -1,0 +1,299 @@
+How to use Log4j and MDC in Java Spring Boot Application?
+ Â Sipios devient TheodoÂ FinTech, lâentitÃ© experte Services Financiers du groupe Theodo 
+ClientsOffresMobile Wealth ManagementFintechÂ Due DiligenceMVPÂ at scaleConception et design UX/UIProgramme d'APIsationFinTech as a serviceExpertisesReactJSOpen BankingSpring BootKotlinBlog
+
+Tech
+
+BusinessCarriÃ¨re
+
+Equipe
+
+
+Nous rejoindreContactHow to use Log4j and MDC in Java Spring Boot Application?10 minutesMis Ã  jour le15/9/2019Share this postIn the context of one of our projects, we were faced with many debugging cases. Simple messages in the logs are not always enough. For example, it may be necessary to have more information about the...#DevOps#Spring Boot
+In the context of one of our projects, we were faced with many debugging cases. Simple messages in the logs are not always enough. For example, it may be necessary to have more information about the user who executed the action (his IP, his permissions, his identifier, â¦). In our case, our application was built from several microservices and we wanted to precisely identify the flow followed by a request that passes from one microservice to another. For this purpose, a unique identifier was generated and displayed in the logs of each web application. This helped us a lot to solve problems with third-party applications we were using.
+
+
+
+How to log messages?
+What context information to add to our messages?
+Can this information be added when running asynchronous threads?
+
+This article will help you build a Spring Boot Java application to log messages with Log4j and use the MDC of this library (Mapping Diagnostic Context) to add contextualization data in addition to messages, especially for asynchronous tasks.
+Create basic Spring Application with Log4j
+Letâs start by generating a classic Spring Boot application with the built-in Log4j library. This library allows us to use a logger that generates log messages of different types (info, error, warning, â¦)
+
+On Spring Initializr (https://start.spring.io/), build a basic Spring Boot project without any dependencies.
+Edit the pom.xml file to add the dependencies needed to use the Log4j library
+Create the src/main/resources/log4j2.xml file that defines the format for future log messages
+
+
+pom.xml
+
+
+...
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>logback-classic</artifactId>
+                    <groupId>ch.qos.logback</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+    </dependencies>
+
+   ...
+
+
+src/main/resources/log4j2.xml
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="FATAL">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" ignoreExceptions="true">
+            <PatternLayout pattern="%clr{%d{yyyy-MM-dd HH:mm:ss.SSS}}{faint} %clr{%5p} %clr{${sys:PID}}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{%X}{faint} %clr{:}{faint} %m%n%xwEx"> </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
+Display our first log message
+In the current state, if we launch the application (via an IDE for example or using Maven), no log message appears. We will create a component that uses the Log4j library to log an information message.
+Create a src/main/java/com/sipios/example/mdc/Execute.java file with the code below. The package name is here com.sipios.example.mdc, of course, it should be replaced by yours :)
+
+src/main/java/com/sipios/example/mdc/Execute.java
+
+
+package com.sipios.example.mdc;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Execute implements CommandLineRunner {
+    private final Logger log = LoggerFactory.getLogger(Execute.class);
+
+    @Override
+    public void run(String... args) {
+        log.info("Test Log4J");
+    }
+}
+
+If you run the application, a first log message respecting the defined format is now displayed. It is also possible to use the error and warning methods. Log messages corresponding to these types will be displayed.
+
+-05-23 09:12:49.115  INFO 15365 --- [           main] c.s.e.m.Execute                          {} : Test Log4j
+
+Use MDC (Mapping Diagnostic Context) in your log
+Now that we know how to use the Log4j library, we will be able to use the Mapping Diagnostic Context (MDC) which allows us to associate a data Map with our message. Some examples of data we recommend you put in the MDC:
+
+Data of the current session (user, query, request â¦)
+Metrics about the execution of the process (initial time and execution time, â¦)
+Pieces of information about the version of the application
+â¦
+
+This Map is displayed in the logs if the %X mask is used in the Log4j message format definition. This is the case here in our src/main/resources/log4j2.xml file. In the previous execution, we see {}, which indicates an empty Map.
+Using MDC is very simple and is used like a classic Map via put, get, remove, clear methods... Let's add two entries to the MDC and execute the application.
+
+src/main/java/com/sipios/example/mdc/Execute.java
+
+
+package com.sipios.example.mdc;
+
+...
+import org.slf4j.MDC;
+
+@Component
+public class Execute implements CommandLineRunner {
+    ...
+
+    public void run(String... args) {
+        MDC.put("request_id", "128");
+        MDC.put("application", "runner");
+        log.info("Test Log4j with MDC");
+    }
+}
+
+
+-05-23 09:14:18.584  INFO 15376 --- [           main] c.s.e.m.Execute                          {application=runner, request_id=128} : Test Log4j
+2018-05-23 09:14:18.586  INFO 15376 --- [           main] c.s.e.m.Application                      {application=runner, request_id=128} : Started Application in 1.061 seconds (JVM running for 2.156)
+
+MDC is global and itâs preserved as long as it is not modified. If you want to empty it by leaving a component for example, just use the clear method. This would then give the following result.
+
+-05-23 09:14:18.584  INFO 15376 --- [           main] c.s.e.m.Execute                          {application=runner, request_id=128} : Test Log4j
+2018-05-23 09:14:18.586  INFO 15376 --- [           main] c.s.e.m.Application                      {} : Started Application in 1.061 seconds (JVM running for 2.156)
+
+How does it work with asynchronous components?
+Letâs try MDC with asynchronous components (a component executed on a parallel thread of the main thread)! First of all, we have to configure our application to execute such beans. We create a service with two methods, one is synchronous and the other asynchronous.
+
+Add @EnableAsync annotation to the Application class
+Create a service with a normal method and an @Async one
+Modify the component to inject and use serviceâs methods
+Launch the application
+
+
+src/main/java/com/sipios/example/mdc/Application.java
+
+
+package com.sipios.example.mdc;
+
+...
+import org.springframework.scheduling.annotation.EnableAsync;
+
+@SpringBootApplication
+@EnableAsync
+public class Application
+{
+    ...
+}
+
+
+src/main/java/com/sipios/example/mdc/service/Example.java
+
+
+package com.sipios.example.mdc.service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Service;
+
+@Service
+public class Example {
+    private static final Logger log = LoggerFactory.getLogger(Example.class);
+
+    public void logNormalThread() {
+        log.info("normal thread");
+    }
+
+    @Async
+    public void logAsyncThread() {
+        log.info("async thread");
+    }
+}
+
+
+src/main/java/com/sipios/example/mdc/Execute.java
+
+
+package com.sipios.example.mdc;
+
+...
+import com.sipios.example.mdc.service.Example;
+
+@Component
+public class Execute implements CommandLineRunner {
+    private Example example;
+
+    public Execute(Example example) {
+        this.example = example;
+    }
+
+    @Override
+    public void run(String... args) {
+        MDC.put("request_id", "128");
+        MDC.put("application", "runner");
+        example.logNormalThread();
+        example.logAsyncThread();
+    }
+}
+
+
+-05-23 09:28:39.218  INFO 15403 --- [           main] c.s.e.m.s.Example                          {application=runner, request_id=128} : normal thread
+2018-05-23 09:28:39.221  INFO 15403 --- [           main] .s.a.AnnotationAsyncExecutionInterceptor {application=runner, request_id=128} : No TaskExecutor bean found for async processing
+2018-05-23 09:28:39.225  INFO 15403 --- [cTaskExecutor-1] c.s.e.m.s.Example                          {} : async thread
+
+Add taskExecutor in Application class
+
+src/main/java/com/sipios/example/mdc/Application.java
+
+
+public class Application
+{
+    ...
+
+    @Bean
+    public Executor asyncExecutor() {
+        ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+        executor.initialize();
+        return executor;
+    }
+}
+
+Re-execute :
+
+-05-23 09:30:41.852  INFO 15406 --- [           main] c.s.e.m.s.Example                          {application=runner, request_id=128} : normal thread
+2018-05-23 09:30:41.855  INFO 15406 --- [asyncExecutor-1] c.s.e.m.s.Example                          {} : async thread
+
+As we can see, MDC in async thread is empty. Indeed each asynchronous task is started in a new thread. Each thread is linked to a Map MDC initiated by the task executor. It is possible to play on this executor to obtain the same MDC as on the main thread. Letâs add a decorator in asyncExecutor in order to duplicate MDC!
+
+src/main/java/com/sipios/example/mdc/ExampleTaskDecorator.java
+
+
+package com.sipios.example.mdc;
+
+import org.slf4j.MDC;
+import org.springframework.core.task.TaskDecorator;
+
+import java.util.Map;
+
+public class ExampleTaskDecorator implements TaskDecorator {
+
+    @Override
+    public Runnable decorate(Runnable runnable) {
+        Map<string, string=""> contextMap = MDC.getCopyOfContextMap();
+        return () -> {
+            try {
+                MDC.setContextMap(contextMap);
+                runnable.run();
+            } finally {
+                MDC.clear();
+            }
+        };
+    }
+}
+
+Set this decorator in async config
+
+src/main/java/com/sipios/example/mdc/Application.java
+
+
+public class Application
+{
+    ...
+
+    public Executor asyncExecutor() {
+        ...
+        executor.setTaskDecorator(new ExampleTaskDecorator());
+        return executor;
+    }
+}
+
+Relaunch application
+
+-05-23 09:47:37.414  INFO 15447 --- [           main] c.s.e.m.s.Example                          {application=runner, request_id=128} : normal thread
+2018-05-23 09:47:37.419  INFO 15447 --- [asyncExecutor-1] c.s.e.m.s.Example                          {application=runner, request_id=128} : async thread
+
+There you go! We can convey in the logs all the context that we want in synchronous or asynchronous tasks.
+Thanks to this, debugging an application is simplified and more understandable. As part of our project this has saved us a lot of time in the exchanges with our contributors. Itâs up to you now :)
+
+Bibliography
+
+http://www.baeldung.com/mdc-in-log4j-2-logback
+https://spring.io/guides/gs/async-method/
+https://moelholm.com/2017/07/24/spring-4-3-using-a-taskdecorator-to-copy-mdc-data-to-async-threads/
+Copyright Â©2023 TheodoÂ FinTech. Tous droits rÃ©servÃ©s.EquipeNous rejoindreContactTheodoPolitique de confidentialitÃ©Mentions lÃ©gales
